@@ -1,0 +1,18 @@
+numero=[21, 34, 55, 89, 144,12,23,43,56,78]
+print("Lista original:", numero)
+cantidad=len(numero)
+print("Cantidad de elementos en la lista:", cantidad)
+numeros_ascendente = numero.copy() 
+numeros_descendente = numero.copy()
+numeros_ascendente.sort()
+print("Lista en orden ascendente:", numeros_ascendente)
+numeros_descendente.sort(reverse=True)
+print("Lista en orden descendente:", numeros_descendente)
+import random
+numero_aleatorio = numero.copy()
+random.shuffle(numero_aleatorio)
+print("Lista con elementos en orden aleatorio:", numero_aleatorio)
+numeros_inveridos = numero.copy()
+numeros_inveridos.reverse()
+print("Lista con elementos en orden inverso:", numeros_inveridos)
+print("¡He terminado de gestionar la lista de números!")
